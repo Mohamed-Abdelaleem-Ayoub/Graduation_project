@@ -122,7 +122,9 @@ class _ChatBotPageState extends State<ChatBotPage> {
                     controller: _userMessage,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Colors.deepOrange),
+                        borderSide: const BorderSide(
+                          color: kBackgroundColor, // Colors.deepOrange
+                        ),
                         borderRadius: BorderRadius.circular(50),
                       ),
                       label: const Text("Ask Gemini..."),
@@ -134,7 +136,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
                   padding: const EdgeInsets.all(15),
                   iconSize: 30,
                   style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.all(Colors.deepPurple),
+                    backgroundColor: WidgetStateProperty.all(Color(0xffFF8EA2)),
                     foregroundColor: WidgetStateProperty.all(Colors.white),
                     shape: WidgetStateProperty.all(const CircleBorder()),
                   ),
@@ -172,7 +174,7 @@ class Messages extends StatelessWidget {
         vertical: 15,
       ).copyWith(left: isUser ? 100 : 10, right: isUser ? 10 : 100),
       decoration: BoxDecoration(
-        color: isUser ? Colors.deepPurple : Colors.grey.shade200,
+        color: isUser ? Color(0xffFFC1CC) : Colors.grey.shade200,
         borderRadius: BorderRadius.only(
           topLeft: const Radius.circular(30),
           bottomLeft: isUser ? const Radius.circular(30) : Radius.zero,
