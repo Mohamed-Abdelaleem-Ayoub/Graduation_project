@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_generative_ai/google_generative_ai.dart';
+import 'package:graduation_project/constans.dart';
 import 'package:intl/intl.dart';
 
 class ChatBotPage extends StatefulWidget {
@@ -45,7 +47,55 @@ class _ChatBotPageState extends State<ChatBotPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Bot')),
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: kBackgroundColor,
+
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios, color: Colors.pink),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.only(right: 8),
+              child: CircleAvatar(
+                radius: 16,
+                backgroundColor: kBackgroundColor, // Colors.pink.shade100,
+                backgroundImage: AssetImage(
+                  'assets/images/2-removebg-preview (1) 1.png',
+                ),
+              ),
+            ),
+
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'MummyGuide',
+                  style: TextStyle(
+                    color: Colors.pink,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+                Row(
+                  children: const [
+                    Icon(Icons.circle, size: 8, color: Colors.green),
+                    SizedBox(width: 4),
+                    Text(
+                      'Online',
+                      style: TextStyle(color: Colors.green, fontSize: 12),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
