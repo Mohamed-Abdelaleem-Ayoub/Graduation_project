@@ -62,9 +62,9 @@ class AllBooksPage extends StatelessWidget {
           SliverToBoxAdapter(child: SearchBarWidget()),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
-            child: SizedBox(height: 50, child: CategoryList()),
+            child: SizedBox(height: 60, child: CategoryList()),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverToBoxAdapter(child: SizedBox(height: 120)),
           AllBooksList(),
         ],
       ),

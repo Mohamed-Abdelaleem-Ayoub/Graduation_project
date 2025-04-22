@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:graduation_project/pages/video_player_page.dart';
+//import 'package:graduation_project/pages/video_player_page.dart';
 
 class VideoCard extends StatelessWidget {
   const VideoCard({super.key});
@@ -9,7 +9,7 @@ class VideoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, VideoPlayerPage.id);
+        //Navigator.pushNamed(context, VideoPlayerPage.id);
       },
       child: Column(
         children: [

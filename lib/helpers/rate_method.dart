@@ -14,7 +14,7 @@ Widget rateMethod(double rate) {
   } else if (1 <= rate && rate <= 2) {
     return const Row(
       children: [
-        Icon(Icons.star, color: Colors.yellow, size: 15),
+        Icon(Icons.star, color: Colors.yellow, size: 16),
         Icon(Icons.star, size: 15),
         Icon(Icons.star, size: 15),
         Icon(Icons.star, size: 15),

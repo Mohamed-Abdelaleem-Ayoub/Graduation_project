@@ -17,8 +17,8 @@ class CustomBookCard extends StatelessWidget {
         clipBehavior: Clip.none,
         children: [
           Container(
-            width: 162,
-            height: 210,
+            // width: 162,
+            // height: 197,
             decoration: const BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -35,7 +35,7 @@ class CustomBookCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     const SizedBox(height: 90),
                     const Center(
@@ -51,7 +51,7 @@ class CustomBookCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 6),
                     const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
@@ -71,7 +71,7 @@ class CustomBookCard extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         rateMethod(4.9),
-                        const Text('4.9', style: TextStyle(fontSize: 12)),
+                        const Text('4.9', style: TextStyle(fontSize: 14)),
                       ],
                     ),
                     const SizedBox(height: 16),
@@ -108,22 +108,23 @@ class CustomBookCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 200,
+            bottom: 177,
+            left: 5,
 
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.amber,
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                   image: NetworkImage(
                     'https://www.noor-book.com/publice/covers_cache_webp/5/6/f/1/37c0e52fcb6f1d3f8d7171731c72f1fc.png.webp',
                   ),
                 ),
               ),
 
-              height: 90,
-              width: 162,
+              height: 200,
+              width: 200,
             ),
           ),
         ],

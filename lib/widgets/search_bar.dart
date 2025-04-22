@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:graduation_project/constans.dart';
 
 class SearchBarWidget extends StatelessWidget {
-  const SearchBarWidget({super.key});
+  final double height;
+  const SearchBarWidget({super.key, this.height = 60});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: SizedBox(
-        height: 40,
+        height: 60,
         child: TextField(
           decoration: InputDecoration(
             fillColor: kBackgroundColor,

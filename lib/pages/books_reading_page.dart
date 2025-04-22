@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:graduation_project/constans.dart';
 
 class BooksReadingPage extends StatelessWidget {
@@ -22,9 +23,6 @@ class BooksReadingPage extends StatelessWidget {
             color: Colors.blueGrey,
           ),
         ),
-      ),
-      body: const Text(
-        'mjjhgfhtrdhrdthiifijfieghijzxfjkhfjdkjiefueiufhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkklllllllllllllllllllllllllllllllllllllllllllllllllddddddddddddddddddddddddddddddddddddddddddddddddddddlllllllllllllllllllllllllllllllllllllllllll;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;dsdjajeijwjiewruyulsfjdhflhtluyrlu',
       ),
     );
   }

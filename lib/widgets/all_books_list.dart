@@ -28,10 +28,10 @@ class AllBooksList extends StatelessWidget {
         ),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 50,
+          mainAxisSpacing: 150,
           crossAxisSpacing: 2,
 
-          // childAspectRatio: 162 / 210,
+          childAspectRatio: 162 / 197,
         ),
       ),
     );
