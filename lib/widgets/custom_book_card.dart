@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:graduation_project/constans.dart';
 import 'package:graduation_project/helpers/rate_method.dart';
 import 'package:graduation_project/pages/book_info_screen.dart';
-import 'package:graduation_project/pages/books_reading_page.dart';
+//import 'package:graduation_project/pages/books_reading_page.dart';
 
 class CustomBookCard extends StatelessWidget {
   const CustomBookCard({super.key});
@@ -11,7 +11,7 @@ class CustomBookCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, BooksReadingPage.id);
+        // Navigator.pushNamed(context, BooksReadingPage.id);
       },
       child: Stack(
         clipBehavior: Clip.none,

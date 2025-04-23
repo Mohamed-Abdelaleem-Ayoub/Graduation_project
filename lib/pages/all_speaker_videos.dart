@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/constans.dart';
-import 'package:graduation_project/widgets/video_card.dart';
 
 class AllSpeakerVideosPage extends StatelessWidget {
   static String id = 'AllSpeakersVideoPage';
@@ -30,7 +29,8 @@ class AllSpeakerVideosPage extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               itemCount: 10,
               itemBuilder: (context, indx) {
-                return const VideoCard();
+                return Text(''); // مؤقتا لحد ما نجيلها
+                // return  VideoCard();
               },
             ),
           ),

@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class YoutubeVideoScreen extends StatefulWidget {
+class VideoPlayerPage extends StatefulWidget {
+  static String id = 'VideoPlayerPage';
   final String youtubeUrl;
 
-  const YoutubeVideoScreen({super.key, required this.youtubeUrl});
+  const VideoPlayerPage({super.key, required this.youtubeUrl});
 
   @override
-  State<YoutubeVideoScreen> createState() => _YoutubeVideoScreenState();
+  State<VideoPlayerPage> createState() => _VideoPlayerPageState();
 }
 
-class _YoutubeVideoScreenState extends State<YoutubeVideoScreen> {
+class _VideoPlayerPageState extends State<VideoPlayerPage> {
   late YoutubePlayerController _controller;
 
   @override

@@ -6,19 +6,6 @@ class AllBooksList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return GridView.builder(
-    //   itemCount: 20,
-    //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-    //     crossAxisCount: 2,
-    //     mainAxisSpacing: 40,
-    //     crossAxisSpacing: 10,
-    //     childAspectRatio: 162 / 210,
-    //   ),
-    //   itemBuilder: (context, index) {
-    //     return CustomBookCard();
-    //   },
-    // );
-
     return SliverPadding(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
       sliver: SliverGrid(
@@ -37,3 +24,18 @@ class AllBooksList extends StatelessWidget {
     );
   }
 }
+
+
+
+ // return GridView.builder(
+    //   itemCount: 20,
+    //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+    //     crossAxisCount: 2,
+    //     mainAxisSpacing: 40,
+    //     crossAxisSpacing: 10,
+    //     childAspectRatio: 162 / 210,
+    //   ),
+    //   itemBuilder: (context, index) {
+    //     return CustomBookCard();
+    //   },
+    // );
